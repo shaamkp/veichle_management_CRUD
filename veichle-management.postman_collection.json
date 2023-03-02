@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "c385c113-6944-4fa6-8452-15b2c584f27c",
+		"name": "veichle-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20753801"
+	},
+	"item": [
+		{
+			"name": "login-user-profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "5x@8HnrYkGMg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/accounts/login-user-profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"login-user-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-admin-profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "FmKUPt3DKtu2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/accounts/login-admin-profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"login-admin-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-super-admin-profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "superadmin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "d%za$PfuFb7e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/accounts/login-super-admin-profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"login-super-admin-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-veichle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5Mjc1MTAwLCJpYXQiOjE2Nzc3MzkxMDAsImp0aSI6IjM0ZDJiNzAzOGUxMjRlZTc5NjA5NTFiMDE2MGU4MTEwIiwidXNlcl9pZCI6N30.eEgL92ZOM8SwKuj0gPX6GT8v8STSC5SrI_jwrzJm4qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "KL10AZ6049",
+							"type": "text"
+						},
+						{
+							"key": "veichle_type",
+							"value": "two_wheeler",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "2018",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Unicorn",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/web/create/veichle-details/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"web",
+						"create",
+						"veichle-details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-veichle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5Mjc1MTAwLCJpYXQiOjE2Nzc3MzkxMDAsImp0aSI6IjM0ZDJiNzAzOGUxMjRlZTc5NjA5NTFiMDE2MGU4MTEwIiwidXNlcl9pZCI6N30.eEgL92ZOM8SwKuj0gPX6GT8v8STSC5SrI_jwrzJm4qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "KL10AZ2255",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/web/update/veichle-details/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"web",
+						"update",
+						"veichle-details",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "veichle-deatils",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5Mjc1MTAwLCJpYXQiOjE2Nzc3MzkxMDAsImp0aSI6IjM0ZDJiNzAzOGUxMjRlZTc5NjA5NTFiMDE2MGU4MTEwIiwidXNlcl9pZCI6N30.eEgL92ZOM8SwKuj0gPX6GT8v8STSC5SrI_jwrzJm4qk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/web/read/veichle-details/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"web",
+						"read",
+						"veichle-details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-veichle-details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA5MjMxMzAxLCJpYXQiOjE2Nzc2OTUzMDEsImp0aSI6IjQ4ZmQ1MTcwZTkzMTQ4MzA4YzQ2Y2RlNjk1MjZmODI0IiwidXNlcl9pZCI6MTB9.oQhFsoHBFz0JqGJzv11nGjNJlHBqHyiFdx74NvvluBU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/web/delete/veichle-details/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"web",
+						"delete",
+						"veichle-details",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
